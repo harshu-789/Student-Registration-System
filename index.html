@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Main container for the student registration system -->
+<div class="container">
+    <!-- Header for the registration system -->
+    <h2>Student Registration System</h2>
+    
+    <!-- Form group for the student's name -->
+    <div class="form-group">
+        <!-- Label for the name input field -->
+        <label for="name">Name:</label>
+        <!-- Input field for entering the student's name -->
+        <input type="text" id="name" placeholder="Enter student's name">
+    </div>
+    
+    <!-- Form group for the student's class -->
+    <div class="form-group">
+        <!-- Label for the class input field -->
+        <label for="class">Class:</label>
+        <!-- Input field for entering the student's class -->
+        <input type="text" id="class" placeholder="Enter student's class">
+    </div>
+    
+    <!-- Form group for the student's email -->
+    <div class="form-group">
+        <!-- Label for the email input field -->
+        <label for="email">Email:</label>
+        <!-- Input field for entering the student's email -->
+        <input type="email" id="email" placeholder="Enter student's Email">
+    </div>
+    
+    <!-- Form group for the student's address -->
+    <div class="form-group">
+        <!-- Label for the address input field -->
+        <label for="address">Address:</label>
+        <!-- Input field for entering the student's address -->
+        <input type="text" id="address" placeholder="Enter student's address">
+    </div>
+    
+    <!-- Form group for the student's contact number -->
+    <div class="form-group">
+        <!-- Label for the contact number input field -->
+        <label for="contact">Contact Number:</label>
+        <!-- Input field for entering the student's contact number -->
+        <input type="text" id="contact" placeholder="Enter student's contact number">
+    </div>
+    
+    <!-- Button to add the student -->
+    <button onclick="addStudent()">Add Student</button>
+    
+    <!-- Table to display the list of registered students -->
+    <table>
+        <thead>
+            <tr>
+                <!-- Table header for student attributes -->
+                <th>Name</th>
+                <th>Class</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <!-- Body of the table where student data will be populated -->
+        <tbody id="studentList">
+            <!-- Student data will be inserted here dynamically -->
+        </tbody>
+    </table>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
